@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FORM</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/6fd40b5745.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+            <!--NAVBAR-->
+            <div class="navbar">
+                <a class="heading"><i class="icon fas fa-envelope"></i>Brighthouse</a>
+                <a class="notheading" href=""> HOME</a>
+                <a class="notheading" href="">PRODUCTS</a>
+                <a class="notheading" href="">INSIGHTS</a>
+                <a class="notheading" href="">ABOUT</a>
+                <a class="notheading" href="">FEEDBACK</a>
+            </div>
+           <!--content-->  
+        <div class="content">
+        <h1>Utility Form Subtitle</h1>
+        <p>[Instruction for utility form] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore uliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex couhaj.</p>
+        <!--form -->
+        <div class="form-container">
+            <form id="myForm"   action="/submit" method="post">
+               <!--first name-->
+               <div class="username">
+              <div class="firstname">
+               <label class="form-label" for="first_name">First Name *</label>
+              <input
+                class="form-input validate-button"
+                type="text"
+                id="first_name"
+                name="first_name"
+                required
+              />
+              <span class="error-message" id="first_name_error"
+                >Empty Field</span
+              >
+            </div>
+            <!--last name-->
+            <div class="lastname">
+              <label class="form-label" for="last_name">Last Name *</label>
+              <input
+                class="form-input validate-button"
+                type="text"
+                id="last_name"
+                name="last_name"
+                required
+              />
+              <span class="error-message" id="last_name_error"
+                >Empty Field</span
+              >
+            </div>
+          </div>
+          <div class="class2">
+              <!--firm name-->
+              <div class="firmname">
+              <label class="form-label" for="firm_name">Firm Name *</label>
+              <input
+                class="form-input validate-button"
+                type="text"
+                id="firm_name"
+                name="firm_name"
+                required
+              />
+              <span class="error-message" id="firm_name_error"
+                >Empty Field</span
+              >
+            </div>
+              <!--email-->
+              <div class="email">
+              <label id="email" class="form-label" for="email">Email *</label>
+              <input
+                class="form-input validate-button"
+                type="email"
+                id="email_name"
+                name="email"
+                required
+              />
+              <span class="error-message" id="email_error"
+                >Invalid email.</span
+              >
+            </div>
+          </div>
+          <div class="class3">
+              <!--phone no-->
+              <div class="phoneno">
+        <label class="form-label" for="phone_number">Phone Number *</label>
+        <input
+          class="form-input validate-button"
+          type="number"
+          id="phone_number"
+          name="age"
+          min="1000000000"
+          required
+        />
+        <span class="error-message" id="phone_error"
+        >Invalid phone number.</span
+      >
+    </div>
+    
+      <!--city-->
+      <div class="city">
+      <label for="form-label">City *</label>
+      <input  name="city" id="choosecity" class="form-input validate-button" list='listid' required>
+      <datalist id='listid'>
+      <option value="">Choose an option</option>
+      <option value="New Delhi">New Delhi</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Chennai">Chennai</option>
+      <option value="Mumbai">Mumbai</option>
+    </datalist>
+    <span class="error-message" id="city_error">Enter/choose one of the following.</span>
+    <br><br>
+  </div>
+</div>
+
+<!--button-->
+        <button id="save_button" class="save-button" type="submit">Submit</button>
+            </form>
+  <script src="javascript/javascript.js" ></script>
+</body>
+</html>

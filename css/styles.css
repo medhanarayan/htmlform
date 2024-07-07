@@ -1,0 +1,83 @@
+body{
+    font-family: Trirong ;
+    margin: 0%;
+}
+/*NAVBAR*/
+.navbar
+{
+    background-color:aliceblue;
+    padding-left: 3%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-right: 3%;
+}
+.heading
+{
+    font-size: 20px;
+    text-align: left;
+    padding-right:40% ;
+}
+.notheading
+{
+    padding-left: 3%;
+    text-align: right;
+    color: rgb(159, 188, 198);
+}
+.icon
+{
+    padding-right:5px;
+}
+/*CONTENT*/
+.content
+{
+    padding-left: 3%;
+    padding-bottom: 5%;
+    padding-right: 60px;
+}
+/*form*/
+
+.form-container {
+    margin-top: 5%;
+    padding-right:5%;
+
+  }
+  .username,.class2,.class3{
+    display: flex;
+  }
+  
+  .firstname, .lastname,.firmname,.email,.phoneno,.city {
+    flex: 50%;
+  }
+  .form-input {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+
+  .save-button {
+    background-color:#D3D3D3;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px; 
+  }
+
+  .error-message {
+    color: red;
+    font-size: 14px;
+    display: none ;
+  }
+  .visible
+  {
+    color:red;
+    font-size: 14px;
+    display:block;
+
+  }
+  .buttonvisible
+  {
+    background-color:#5A5A5A;
+  }
